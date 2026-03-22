@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+
+# Editor junk
+*.bak
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Node (if ever used)
+node_modules/
+npm-debug.log*
+
+# Build artifacts
+dist/
+*.min.css.map
+*.min.js.map
+
+# Secrets / env
+.env
+.env.*
