@@ -138,6 +138,25 @@
       },
       "performer": {"@type": "MusicGroup", "name": "MKULTRA"},
       "url": "https://nofuntroy.eventbrite.com"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicEvent",
+      "name": "MKULTRA / Dethwish / Hoth",
+      "startDate": "2026-05-20T18:30",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "The Woodshop",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "21 Meadow St",
+          "addressLocality": "Brooklyn",
+          "addressRegion": "NY",
+          "addressCountry": "US"
+        }
+      },
+      "performer": {"@type": "MusicGroup", "name": "MKULTRA"},
+      "url": "https://kydlabs.com/e/EV567596a0-5ad4-4f7d-a568-5378d2b66635?referral_id=g-05c01441-0f95-40dc-a115-0ec8c5023f21"
     }
   ]
   </script>
@@ -156,6 +175,7 @@
     <li><a href="#home" onclick="closeMenu()">HOME</a></li>
     <li><a href="#music" onclick="closeMenu()">MUSIC</a></li>
     <li><a href="#shows" onclick="closeMenu()">SHOWS</a></li>
+    <li><a href="#merch" onclick="closeMenu()">MERCH</a></li>
     <li><a href="#lore" onclick="closeMenu()">ABOUT</a></li>
     <li><a href="#contact" onclick="closeMenu()">CONTACT</a></li>
     <li><a href="https://open.spotify.com/artist/62q4VhTETdekmQYoyws6Dl" target="_blank">SPOTIFY</a></li>
@@ -170,62 +190,60 @@
 
 <div id="music" class="section">
   <CENTER>
-    <div class="section-header">
-      <img src="img/mascot.png" alt="" class="header-icon" width="28" height="28">
-      <H2>NEW RELEASE</H2>
-      <img src="img/mascot.png" alt="" class="header-icon" width="28" height="28">
-    </div>
-
-    <div class="album-box">
-      <a href="https://as.vyd.co/TheShapeOfEverythingAndNothing" target="_blank" class="album-cover-link">
-        <img src="img/THE SHAPE OF EVERYTHING AND NOTHING TO COME EP.png" alt="The Shape of Everything and Nothing to Come EP" class="album-cover" width="220" height="220">
-      </a>
-      <H3 class="album-title">The Shape of Everything and Nothing</H3>
-      <p class="album-sub">The brand new EP from MKULTRA &mdash; available now on all platforms</p>
-      <div class="album-links">
-        <a href="https://as.vyd.co/TheShapeOfEverythingAndNothing" target="_blank" class="big-btn">
-          LISTEN NOW
-        </a>
-        <button class="big-btn big-btn-lyrics" onclick="openLyricsLightbox()">
-          READ LYRICS
-        </button>
+    <div class="release-row">
+      <div class="release-col">
+        <div class="album-box">
+          <div class="section-header card-header">
+            <img src="img/mascot.png" alt="" class="header-icon" width="28" height="28">
+            <H2>NEW RELEASE</H2>
+            <img src="img/mascot.png" alt="" class="header-icon" width="28" height="28">
+          </div>
+          <a href="https://as.vyd.co/TheShapeOfEverythingAndNothing" target="_blank" class="album-cover-link">
+            <img src="img/THE SHAPE OF EVERYTHING AND NOTHING TO COME EP.png" alt="The Shape of Everything and Nothing to Come EP" class="album-cover" width="220" height="220">
+          </a>
+          <H3 class="album-title">The Shape of Everything and Nothing</H3>
+          <p class="album-sub">The brand new EP from MKULTRA &mdash; available now on all platforms</p>
+          <div class="album-links">
+            <a href="https://as.vyd.co/TheShapeOfEverythingAndNothing" target="_blank" class="big-btn">
+              LISTEN NOW
+            </a>
+            <button class="big-btn big-btn-lyrics" onclick="openLyricsLightbox()">
+              READ LYRICS
+            </button>
+          </div>
+          <p class="album-meta">
+            &gt;&gt; Streaming everywhere &lt;&lt;<BR>
+            <small>Click the link above to choose your platform</small>
+          </p>
+          <div class="new-badge">!! NEW !!</div>
+        </div>
       </div>
-      <p class="album-meta">
-        &gt;&gt; Streaming everywhere &lt;&lt;<BR>
-        <small>Click the link above to choose your platform</small>
-      </p>
-      <div class="new-badge">!! NEW !!</div>
+
+      <div class="release-col" id="video">
+        <div class="album-box video-box">
+          <div class="section-header card-header">
+            <H2>LATEST VIDEO</H2>
+          </div>
+          <div class="video-label">NOW PLAYING</div>
+          <a href="https://youtu.be/NZ-Xc_JJPiQ" target="_blank" class="video-thumb-link">
+            <img src="https://img.youtube.com/vi/NZ-Xc_JJPiQ/hqdefault.jpg" alt="MKULTRA - TOXIC (Official Music Video)" class="video-thumb" width="320" height="180">
+            <div class="video-play-overlay">&#9654;</div>
+          </a>
+          <H3 class="album-title">TOXIC</H3>
+          <p class="album-sub">Official Music Video &mdash; MKULTRA</p>
+          <div class="album-links">
+            <a href="https://youtu.be/NZ-Xc_JJPiQ" target="_blank" class="big-btn">
+              WATCH ON YOUTUBE
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </CENTER>
 </div>
 
 <div class="ticker-wrap">
   <div class="ticker" id="promo-ticker">&#9733; THE WORLD'S MOST CONFUSING BAND   --   NYC   --   POST-GENRE SHAPE SHIFTERS   --   NEW EP OUT NOW   --   &#9733; THE WORLD'S MOST CONFUSING BAND   --   NYC   --   POST-GENRE SHAPE SHIFTERS   --   NEW EP OUT NOW   --  </div>
-</div>
-
-<div class="section-divider"><IMG SRC="img/prismline.gif" alt="" class="divider-gif" width="100%" height="auto" style="transform:scaleX(-1)"></div>
-
-<div id="video" class="section">
-  <CENTER>
-    <div class="section-header">
-      <H2>LATEST VIDEO</H2>
-    </div>
-
-    <div class="album-box video-box">
-      <div class="video-label">NOW PLAYING</div>
-      <a href="https://youtu.be/n-c0vnvjxRU" target="_blank" class="video-thumb-link">
-        <img src="https://img.youtube.com/vi/n-c0vnvjxRU/hqdefault.jpg" alt="MKULTRA - Latest Music Video" class="video-thumb" width="320" height="180">
-        <div class="video-play-overlay">&#9654;</div>
-      </a>
-      <H3 class="album-title">The Shape of Everything and Nothing to Come</H3>
-      <p class="album-sub">Official Music Video &mdash; MKULTRA</p>
-      <div class="album-links">
-        <a href="https://youtu.be/n-c0vnvjxRU" target="_blank" class="big-btn">
-          WATCH ON YOUTUBE
-        </a>
-      </div>
-    </div>
-  </CENTER>
 </div>
 
 <div class="ticker-wrap ticker-currency">
@@ -242,25 +260,22 @@
     </div>
 
     <div class="show-card">
-      <div class="show-date">APR 20</div>
+      <div class="show-date">MAY 20</div>
       <div class="show-details">
-        <div class="show-name">MKULTRA / Social Propaganda / Table Dave and the Chairs / Plyers</div>
+        <div class="show-name">MKULTRA / Dethwish / Hoth</div>
         <div class="show-venue">
-          <a href="https://maps.google.com/?q=275+River+St+Troy+NY+12180" target="_blank">
-            No Fun
+          <a href="https://maps.google.com/?q=21+Meadow+St+Brooklyn+NY" target="_blank">
+            The Woodshop
           </a>
-          &mdash; Troy, NY
+          &mdash; Brooklyn, NY
         </div>
-        <div class="show-address">275 River St, Troy, NY 12180</div>
-        <div class="show-times">Doors: 6:00 PM &nbsp;|&nbsp; Show: 7:00 PM</div>
+        <div class="show-address">21 Meadow St, Brooklyn, NY</div>
+        <div class="show-times">Doors: 6:30 PM &nbsp;|&nbsp; 16+ &nbsp;|&nbsp; $12 ADV / $15 DOS</div>
         <div class="show-actions">
-          <a href="https://nofuntroy.eventbrite.com" target="_blank" class="ticket-btn">GET TICKETS</a>
-          <a href="https://maps.google.com/?q=275+River+St+Troy+NY+12180" target="_blank" class="map-btn">MAP</a>
-          <a href="#" class="poster-btn" onclick="openLightbox('shows/april 20 2026.jpg', 'Apr 20 &mdash; No Fun, Troy NY'); return false;">
-            <img src="shows/april 20 2026.jpg" alt="Show poster" class="poster-thumb" width="40" height="40">
-          </a>
-          <a href="#" class="poster-btn" onclick="openLightbox('shows/april 20 2026 second poster.jpg', 'Apr 20 &mdash; No Fun, Troy NY'); return false;">
-            <img src="shows/april 20 2026 second poster.jpg" alt="Show poster (alt)" class="poster-thumb" width="40" height="40">
+          <a href="https://kydlabs.com/e/EV567596a0-5ad4-4f7d-a568-5378d2b66635?referral_id=g-05c01441-0f95-40dc-a115-0ec8c5023f21" target="_blank" class="ticket-btn">GET TICKETS</a>
+          <a href="https://maps.google.com/?q=21+Meadow+St+Brooklyn+NY" target="_blank" class="map-btn">MAP</a>
+          <a href="#" class="poster-btn" onclick="openLightbox('shows/may 20 2026.jpg', 'May 20 &mdash; The Woodshop, Brooklyn NY'); return false;">
+            <img src="shows/may 20 2026.jpg" alt="Show poster" class="poster-thumb" width="40" height="40">
           </a>
         </div>
       </div>
@@ -269,6 +284,29 @@
     <details class="past-shows-dropdown">
       <summary class="past-shows-toggle">PAST SHOWS</summary>
       <div class="past-shows-content">
+
+        <div class="show-card past-show">
+          <div class="show-date">APR 20</div>
+          <div class="show-details">
+            <div class="show-name">MKULTRA / Social Propaganda / Table Dave and the Chairs / Plyers</div>
+            <div class="show-venue">
+              <a href="https://maps.google.com/?q=275+River+St+Troy+NY+12180" target="_blank">
+                No Fun
+              </a>
+              &mdash; Troy, NY
+            </div>
+            <div class="show-address">275 River St, Troy, NY 12180</div>
+            <div class="show-times">Doors: 6:00 PM &nbsp;|&nbsp; Show: 7:00 PM</div>
+            <div class="show-actions">
+              <a href="#" class="poster-btn" onclick="openLightbox('shows/april 20 2026.jpg', 'Apr 20 &mdash; No Fun, Troy NY'); return false;">
+                <img src="shows/april 20 2026.jpg" alt="Show poster" class="poster-thumb" width="40" height="40">
+              </a>
+              <a href="#" class="poster-btn" onclick="openLightbox('shows/april 20 2026 second poster.jpg', 'Apr 20 &mdash; No Fun, Troy NY'); return false;">
+                <img src="shows/april 20 2026 second poster.jpg" alt="Show poster (alt)" class="poster-thumb" width="40" height="40">
+              </a>
+            </div>
+          </div>
+        </div>
 
         <div class="show-card past-show">
           <div class="show-date">MAR 20</div>
@@ -332,6 +370,34 @@
 </div>
 
 <div class="section-divider"><IMG SRC="img/prismline.gif" alt="" class="divider-gif" width="100%" height="auto" style="transform:scaleX(-1)"></div>
+
+<div id="merch" class="section">
+  <CENTER>
+    <div class="album-box merch-box">
+      <div class="section-header card-header">
+        <img src="img/mascot.png" alt="" class="header-icon" width="28" height="28">
+        <H2>OFFICIAL MERCH</H2>
+        <img src="img/mascot.png" alt="" class="header-icon" width="28" height="28">
+      </div>
+      <H3 class="album-title">Wear The Confusion</H3>
+      <p class="album-sub">Official tees from the band &mdash; pick your poison</p>
+      <div class="merch-products">
+        <a href="https://mkultraisaband.myshopify.com/products/hermes-tee" target="_blank" class="merch-product-btn">HERMES TEE</a>
+        <a href="https://mkultraisaband.myshopify.com/products/the-classic-tee" target="_blank" class="merch-product-btn">CLASSIC TEE</a>
+        <a href="https://mkultraisaband.myshopify.com/products/voltron-tee" target="_blank" class="merch-product-btn">VOLTRON TEE</a>
+      </div>
+      <div class="album-links">
+        <a href="https://mkultraisaband.myshopify.com" target="_blank" class="big-btn">
+          SHOP ALL MERCH
+        </a>
+      </div>
+      <p class="album-meta">
+        &gt;&gt; Ships worldwide &lt;&lt;<BR>
+        <small>Click a tee above to shop direct</small>
+      </p>
+    </div>
+  </CENTER>
+</div>
 
 <div id="contact" class="section">
   <CENTER>

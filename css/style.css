@@ -220,3 +220,92 @@ footer { padding: 10px 10px 8px; font-size: 0.78rem; }
 }
 
 @media (min-width:480px) { .show-date { font-size: 1.6rem; } .album-title { font-size: 1.3rem; } h2 { font-size: 1.35rem; } }
+
+.card-header {
+  margin: -4px 0 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #c0c0c0;
+}
+.card-header .header-icon { mix-blend-mode: multiply; }
+
+/* ============================================
+   RELEASE ROW (EP + VIDEO side-by-side)
+   ============================================ */
+.release-row {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  max-width: 920px;
+  margin: 0 auto;
+}
+.release-col {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+}
+.release-col .album-box {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+@media (min-width: 760px) {
+  .release-row {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 0 8px;
+  }
+  .release-col {
+    flex: 1 1 0;
+    max-width: 440px;
+    min-width: 0;
+  }
+  .release-col .album-box { padding: 14px 12px; }
+  .release-col .album-cover { width: min(160px, 60%); }
+  .release-col .album-title { font-size: 1.05rem; }
+  .release-col .album-sub { font-size: 0.82rem; }
+  .release-col .big-btn { font-size: 0.82rem; padding: 8px 14px; }
+  .release-col .album-meta { font-size: 0.75rem; }
+  .release-col .video-thumb-link { margin-bottom: 8px; }
+  .release-col h2 { font-size: 1.15rem; }
+}
+
+/* ============================================
+   MERCH PANEL
+   ============================================ */
+.merch-products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  margin: 6px auto 12px;
+  max-width: 360px;
+}
+
+.merch-product-btn {
+  display: inline-block;
+  font-family: times_b16, "Times New Roman", serif;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  padding: 7px 12px;
+  background: #c0c0c0;
+  color: #0D0D0D !important;
+  text-decoration: none !important;
+  border: 2px outset #e0e0e0;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.merch-product-btn:hover {
+  background: #0D0D0D;
+  color: #05F215 !important;
+  border-color: #03A61C;
+}
+
+.merch-product-btn:active {
+  border-style: inset;
+}
