@@ -174,6 +174,7 @@
   <ul>
     <li><a href="#home" onclick="closeMenu()">HOME</a></li>
     <li><a href="#music" onclick="closeMenu()">MUSIC</a></li>
+    <li><a href="#" onclick="closeMenu(); openLyricsLightbox(); return false;">LYRICS</a></li>
     <li><a href="#shows" onclick="closeMenu()">SHOWS</a></li>
     <li><a href="#merch" onclick="closeMenu()">MERCH</a></li>
     <li><a href="#lore" onclick="closeMenu()">ABOUT</a></li>
@@ -191,6 +192,8 @@
 <div id="music" class="section">
   <CENTER>
     <div class="release-row">
+      <!-- NEW RELEASE PANEL - hidden until the next release goes up for pre-sale.
+           Swap the cover image, title, and links, then uncomment to bring it back.
       <div class="release-col">
         <div class="album-box">
           <div class="section-header card-header">
@@ -218,6 +221,7 @@
           <div class="new-badge">!! NEW !!</div>
         </div>
       </div>
+      -->
 
       <div class="release-col" id="video">
         <div class="album-box video-box">
@@ -225,14 +229,14 @@
             <H2>LATEST VIDEO</H2>
           </div>
           <div class="video-label">NOW PLAYING</div>
-          <a href="https://youtu.be/NZ-Xc_JJPiQ" target="_blank" class="video-thumb-link">
-            <img src="https://img.youtube.com/vi/NZ-Xc_JJPiQ/hqdefault.jpg" alt="MKULTRA - TOXIC (Official Music Video)" class="video-thumb" width="320" height="180">
+          <a href="https://youtu.be/DdYqVNG6QUo" target="_blank" class="video-thumb-link">
+            <img src="https://img.youtube.com/vi/DdYqVNG6QUo/hqdefault.jpg" alt="MKULTRA - GOMKGO (Official Music Video)" class="video-thumb" width="320" height="180">
             <div class="video-play-overlay">&#9654;</div>
           </a>
-          <H3 class="album-title">TOXIC</H3>
+          <H3 class="album-title">GOMKGO</H3>
           <p class="album-sub">Official Music Video</p>
           <div class="album-links">
-            <a href="https://youtu.be/NZ-Xc_JJPiQ" target="_blank" class="big-btn">
+            <a href="https://youtu.be/DdYqVNG6QUo" target="_blank" class="big-btn">
               WATCH ON YOUTUBE
             </a>
           </div>
@@ -259,31 +263,28 @@
       <H2 class="shows-title">UPCOMING SHOWS</H2>
     </div>
 
-    <div class="show-card">
-      <div class="show-date">MAY 20</div>
-      <div class="show-details">
-        <div class="show-name">MKULTRA / Dethwish / Hoth</div>
-        <div class="show-venue">
-          <a href="https://maps.google.com/?q=21+Meadow+St+Brooklyn+NY" target="_blank">
-            The Woodshop
-          </a>
-          , Brooklyn, NY
-        </div>
-        <div class="show-address">21 Meadow St, Brooklyn, NY</div>
-        <div class="show-times">Doors: 6:30 PM &nbsp;|&nbsp; 16+ &nbsp;|&nbsp; $12 ADV / $15 DOS</div>
-        <div class="show-actions">
-          <a href="https://kydlabs.com/e/EV567596a0-5ad4-4f7d-a568-5378d2b66635?referral_id=g-05c01441-0f95-40dc-a115-0ec8c5023f21" target="_blank" class="ticket-btn">GET TICKETS</a>
-          <a href="https://maps.google.com/?q=21+Meadow+St+Brooklyn+NY" target="_blank" class="map-btn">MAP</a>
-          <a href="#" class="poster-btn" onclick="openLightbox('shows/may 20 2026.jpg', 'May 20 at The Woodshop, Brooklyn NY'); return false;">
-            <img src="shows/may 20 2026.jpg" alt="Show poster" class="poster-thumb" width="40" height="40">
-          </a>
-        </div>
-      </div>
+    <div class="show-card shows-coming-soon">
+      <div class="coming-soon">COMING SOON..</div>
     </div>
 
     <details class="past-shows-dropdown">
       <summary class="past-shows-toggle">PAST SHOWS</summary>
       <div class="past-shows-content">
+
+        <div class="show-card past-show">
+          <div class="show-date">MAY 20</div>
+          <div class="show-details">
+            <div class="show-name">MKULTRA / Dethwish / Hoth</div>
+            <div class="show-venue">
+              <a href="https://maps.google.com/?q=21+Meadow+St+Brooklyn+NY" target="_blank">
+                The Woodshop
+              </a>
+              , Brooklyn, NY
+            </div>
+            <div class="show-address">21 Meadow St, Brooklyn, NY</div>
+            <div class="show-times">Doors: 6:30 PM &nbsp;|&nbsp; 16+ &nbsp;|&nbsp; $12 ADV / $15 DOS</div>
+          </div>
+        </div>
 
         <div class="show-card past-show">
           <div class="show-date">APR 20</div>
