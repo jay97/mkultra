@@ -67,12 +67,19 @@
       "https://www.youtube.com/@MKULTRA4747",
       "https://downrightmerch.com/collections/mkultra"
     ],
-    "album": {
-      "@type": "MusicAlbum",
-      "name": "The Shape of Everything and Nothing",
-      "albumReleaseType": "EP",
-      "url": "https://as.vyd.co/TheShapeOfEverythingAndNothing"
-    }
+    "album": [
+      {
+        "@type": "MusicAlbum",
+        "name": "MIND KONTROL",
+        "url": "https://as.vyd.co/MindKontrol"
+      },
+      {
+        "@type": "MusicAlbum",
+        "name": "The Shape of Everything and Nothing",
+        "albumReleaseType": "EP",
+        "url": "https://as.vyd.co/TheShapeOfEverythingAndNothing"
+      }
+    ]
   }
   </script>
 
@@ -157,6 +164,39 @@
       },
       "performer": {"@type": "MusicGroup", "name": "MKULTRA"},
       "url": "https://kydlabs.com/e/EV567596a0-5ad4-4f7d-a568-5378d2b66635?referral_id=g-05c01441-0f95-40dc-a115-0ec8c5023f21"
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "MusicEvent",
+      "name": "MKULTRA: Mind Kontrol Release Show",
+      "startDate": "2026-09-13T19:00-04:00",
+      "endDate": "2026-09-13T23:00-04:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "MusicVenue",
+        "name": "Union Pool",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "484 Union Ave",
+          "addressLocality": "Brooklyn",
+          "addressRegion": "NY",
+          "postalCode": "11211",
+          "addressCountry": "US"
+        }
+      },
+      "performer": [
+        {"@type": "MusicGroup", "name": "MKULTRA"},
+        {"@type": "MusicGroup", "name": "Boyscoutmarie"},
+        {"@type": "MusicGroup", "name": "Wiring"}
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "18.70",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://link.dice.fm/h8cdf04495ad"
+      },
+      "url": "https://link.dice.fm/h8cdf04495ad"
     }
   ]
   </script>
@@ -192,8 +232,6 @@
 <div id="music" class="section">
   <CENTER>
     <div class="release-row">
-      <!-- NEW RELEASE PANEL - hidden until the next release goes up for pre-sale.
-           Swap the cover image, title, and links, then uncomment to bring it back.
       <div class="release-col">
         <div class="album-box">
           <div class="section-header card-header">
@@ -201,27 +239,23 @@
             <H2>NEW RELEASE</H2>
             <img src="img/mascot.png" alt="" class="header-icon" width="28" height="28">
           </div>
-          <a href="https://as.vyd.co/TheShapeOfEverythingAndNothing" target="_blank" class="album-cover-link">
-            <img src="img/THE SHAPE OF EVERYTHING AND NOTHING TO COME EP.png" alt="The Shape of Everything and Nothing to Come EP" class="album-cover" width="220" height="220">
+          <a href="https://as.vyd.co/MindKontrol" target="_blank" class="album-cover-link">
+            <img src="img/MIND KONTROL.jpg" alt="MIND KONTROL" class="album-cover" width="220" height="220">
           </a>
-          <H3 class="album-title">The Shape of Everything and Nothing</H3>
-          <p class="album-sub">Out now on all platforms</p>
+          <H3 class="album-title">MIND KONTROL</H3>
+          <p class="album-sub">Coming soon on all platforms</p>
           <div class="album-links">
-            <a href="https://as.vyd.co/TheShapeOfEverythingAndNothing" target="_blank" class="big-btn">
-              LISTEN NOW
+            <a href="https://as.vyd.co/MindKontrol" target="_blank" class="big-btn">
+              PRE-SAVE
             </a>
-            <button class="big-btn big-btn-lyrics" onclick="openLyricsLightbox()">
-              READ LYRICS
-            </button>
           </div>
           <p class="album-meta">
-            &gt;&gt; Streaming everywhere &lt;&lt;<BR>
-            <small>Click the link above to choose your platform</small>
+            &gt;&gt; <a href="#shows">Release show Sep 13 at Union Pool</a> &lt;&lt;<BR>
+            <small>Pre-save on Spotify, pre-add on Apple Music, and more</small>
           </p>
-          <div class="new-badge">!! NEW !!</div>
+          <div class="new-badge">!! PRE-SAVE !!</div>
         </div>
       </div>
-      -->
 
       <div class="release-col" id="video">
         <div class="album-box video-box">
@@ -247,7 +281,7 @@
 </div>
 
 <div class="ticker-wrap">
-  <div class="ticker" id="promo-ticker">&#9733; THE WORLD'S MOST CONFUSING BAND   --   NYC   --   POST-GENRE SHAPE SHIFTERS   --   NEW EP OUT NOW   --   &#9733; THE WORLD'S MOST CONFUSING BAND   --   NYC   --   POST-GENRE SHAPE SHIFTERS   --   NEW EP OUT NOW   --  </div>
+  <div class="ticker" id="promo-ticker">&#9733; THE WORLD'S MOST CONFUSING BAND   --   NYC   --   POST-GENRE SHAPE SHIFTERS   --   NEW EP OUT NOW   --   MIND KONTROL PRE-SAVE NOW   --   &#9733; THE WORLD'S MOST CONFUSING BAND   --   NYC   --   POST-GENRE SHAPE SHIFTERS   --   NEW EP OUT NOW   --   MIND KONTROL PRE-SAVE NOW   --  </div>
 </div>
 
 <div class="ticker-wrap ticker-currency">
@@ -263,8 +297,24 @@
       <H2 class="shows-title">UPCOMING SHOWS</H2>
     </div>
 
-    <div class="show-card shows-coming-soon">
-      <div class="coming-soon">COMING SOON..</div>
+    <div class="show-card">
+      <div class="show-date">SEP 13</div>
+      <div class="show-details">
+        <div class="show-name">Mind Kontrol<BR><small>Release Show</small></div>
+        <div class="show-lineup">w/ Boyscoutmarie, Wiring</div>
+        <div class="show-venue">
+          <a href="https://maps.google.com/?q=484+Union+Ave+Brooklyn+NY+11211" target="_blank">
+            Union Pool
+          </a>
+          , Brooklyn, NY
+        </div>
+        <div class="show-address">484 Union Ave, Brooklyn, NY 11211</div>
+        <div class="show-times">Doors: 7:00 PM &nbsp;|&nbsp; 21+ &nbsp;|&nbsp; $18.70</div>
+        <div class="show-actions">
+          <a href="https://link.dice.fm/h8cdf04495ad" target="_blank" class="ticket-btn">GET TICKETS</a>
+          <a href="https://maps.google.com/?q=484+Union+Ave+Brooklyn+NY+11211" target="_blank" class="map-btn">MAP</a>
+        </div>
+      </div>
     </div>
 
     <details class="past-shows-dropdown">
@@ -475,23 +525,38 @@
           </div>
 
           <div id="lore-ian" class="lore-panel" style="display:none">
-            <p class="myspace-about coming-soon">[ coming soon ]</p>
+            <div class="myspace-section-label">About Ian Knapp:</div>
+            <p class="myspace-about">Ian Knapp is a prototype meta-human built at a plastic factory in New Jersey. The purpose of his fabrication was to serve as a test model for future meta-humans. He was subjected to intense physical and psychological conditioning tests at a very young age which have served as the basis of his artistic inspiration. At the age of nine he found an opportunity to escape the facility and took it.</p>
+            <p class="myspace-about">There was a pipeline underneath the factory to transport the meta-human waste to the local sanitation plant. The pipes were just barely wide enough for a small child to fit their arms into. Ian would spend the evenings after his conditioning tests teaching himself to become very small. It took him almost a year but eventually he was able to make himself the size of a small cat. He climbed into the pipes and crawled his way to freedom. He emerged from a manhole on the side of the highway. He walked down Interstate 195 for eighteen hours straight until a family driving by in a Lincoln station wagon found him and brought him home.</p>
+            <p class="myspace-about">At his new home with his new family he was given the freedom to discover himself as well as an education in the art of being human. From time to time his meta-human roots still show themselves but to the naked eye he is virtually indistinguishable from Homo Sapien. He has dedicated the rest of his lifespan to exploring the limitless bounds of his own imagination for the sake of providing the Homo Sapien with immense material, spiritual, and metaphysical pleasure.</p>
           </div>
 
           <div id="lore-danny" class="lore-panel" style="display:none">
-            <p class="myspace-about coming-soon">[ coming soon ]</p>
+            <div class="myspace-section-label">About Danny Eberle:</div>
+            <p class="myspace-about">Danny Eberle was born in the arid wastes of Staten Island. His youth was spent scavenging for resources amongst the rubble while avoiding the bands of marauders that patrolled the quarantine zones. Life was dark on Staten Island. The Staten Nuclear Wars had created a dust cloud that blocked out the sun for most of the day. Danny had never even felt true sunlight until much later in his adolescence.</p>
+            <p class="myspace-about">At the age of ten he found a snare drum left behind at one of the ancient sites that had been perfectly encapsulated in amber. These ancient sites are scattered all over Staten Island. They are the only places where old world (pre-Staten Nuclear Wars) technology can still be studied. The drum must have survived one of the hydrogen bombs. He brought the drum back to his camp where the colony mason managed to free it from its suspended existence.</p>
+            <p class="myspace-about">Danny learned the intricacies of the drum. The dodgeball-esque timbres it produced inspired the colony to rise above and become the controlling faction of Staten Island. At the age of twenty two, for the first time, Danny boarded a raft and crossed Gravesend Bay. He had never left Staten before. He met the other members of MKULTRA and decided to lend his drum expertise to the cause.</p>
           </div>
 
           <div id="lore-alex" class="lore-panel" style="display:none">
-            <p class="myspace-about coming-soon">[ coming soon ]</p>
+            <div class="myspace-section-label">About Alex Wacksman:</div>
+            <p class="myspace-about">Alex Wacksman was born in 1066 in what is now referred to as Ukraine. His family operated a water mill in the Donetsk region. He would spend his childhood playing in the fields by the mill. Bands of soldiers would often ride by in the distance. Alex was always particularly fascinated by the longbows adorning the archers' backs. The sun would reflect off the taut bow strings and hit his eye.</p>
+            <p class="myspace-about">Upon entering his early teenage years he left the comforts of the mill and joined the militia of a local Warlord. He picked up a bow and participated in various campaigns for the Kievan Rus&rsquo; army until he was captured in 1081 by another Kievan Rus&rsquo; faction during a civil war. Alex, alongside the rest of his unit, were brought far into the north and locked in a prison made of ice. He was inadvertently cryogenically frozen and remained preserved for almost one thousand years.</p>
+            <p class="myspace-about">In 2015, the ice prison was discovered during an expedition into the northern reaches of Ukraine. Alex was defrosted in an industrial microwave. The radiation nearly killed him and certainly destroyed most of his brain cells. The members of MKULTRA found him raving and frothing in a field and felt so bad they let him join the band out of charity.</p>
           </div>
 
           <div id="lore-nate" class="lore-panel" style="display:none">
-            <p class="myspace-about coming-soon">[ coming soon ]</p>
+            <div class="myspace-section-label">About Nate Holloway:</div>
+            <p class="myspace-about">Nate Holloway comes from a village high in the Ural Mountains where the perfection of low frequency manipulation is a tradition that spans back to 1,000 years before the formation of the Roman Empire. His village is found near the summit of Bass Mountain. The population of the mountain has lived a spartan existence for thousands of years, swearing off any of the comforts of modern existence for the sake of remaining true to their tribal roots.</p>
+            <p class="myspace-about">Nate is a fine-tuned artisan from a family of capable specialists. He is a testament to the hereditary traditions of the mountain men. His youth was spent in the Bass Mines where his mentor, Vladimir Bass, drilled into him the primeval lessons. Nate was expected to have memorized every scale and mode before the age of three. His failing to do so would have resulted in him being cast off the mountain by the village elder, a fate that certainly would have resulted in death. He was expected to be able to perform <em>Portrait of Tracy</em> note for note by the age of four.</p>
+            <p class="myspace-about">The arduous trials of the village pushed Nate to his very limits but he met them all, no matter the cost. Nate overcame all the challenges he was met with and became living proof of the results of Bass Mountain.</p>
           </div>
 
           <div id="lore-shalit" class="lore-panel" style="display:none">
-            <p class="myspace-about coming-soon">[ coming soon ]</p>
+            <div class="myspace-section-label">About Shalit Maitrechit:</div>
+            <p class="myspace-about">Shalit Maitrechit did not begin his life as Shalit Maitrechit. He began his life as a combination of different alien minerals that were lodged inside an asteroid hurtling towards Earth. The asteroid was about the size of a basketball. It crashed into Earth in the year 1963 off the coast of Thailand.</p>
+            <p class="myspace-about">Scientists quickly arrived at the crash site in order to study its chemical and elemental makeup. A CIA Black Ops operation was put into effect to intercept the asteroid transportation from Thai authorities. Via a combination of armed combat and logistical errors, the asteroid ended up in Queens. It lay dormant for thirty six years, collecting dust on an archaeologist's shelf.</p>
+            <p class="myspace-about">In the year 1999, Shalit happened. The archaeological reports suggest that early in the morning a reaction began. Smoke billowed from the stone. Pure beams of blinding light that encompassed the entire color spectrum shot outwards and filled the room. Within a few moments, Shalit was here. He was drawn towards the guitar at a very young age and has been using it as a means to communicate his otherworldly sensibilities to Earth.</p>
           </div>
 
         </div>
